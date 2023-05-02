@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'gpt'
 
 class Task
@@ -16,5 +18,9 @@ class Task
     @gpt3_response = GPT3.gpt3_wrapper(prompt)
 
     @status = :completed
+  end
+
+  def add_context(text)
+    @description = @description + "context: #{text}"
   end
 end

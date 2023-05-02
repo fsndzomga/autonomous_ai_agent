@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'bundler/setup'
 require 'dotenv'
 require 'net/http'
@@ -24,7 +26,7 @@ class GPT3
         }
       ],
       'temperature' => temperature,
-      'max_tokens' => max_tokens,
+      'max_tokens' => max_tokens
     }.to_json
 
     req_options = {
