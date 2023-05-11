@@ -22,6 +22,10 @@ OPENAI_API_KEY=your_api_key_here
 
 Replace your_api_key_here with your actual OpenAI API key.
 
+You should obtain a Google custom search API key and CX value. In the .env file add these values:
+API_KEY = 'your_google_custom_search_api_key'
+CX = "google_cx"
+
 ## Running the Script
 
 After setting up the project, run the main script using:
